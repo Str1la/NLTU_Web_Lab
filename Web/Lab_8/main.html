@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Табулювання функцій</title>
+    <style>
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+      }
+      #table1 {
+        float: left;
+        margin-right: 20px;
+      }
+      #table2 {
+        clear: both;
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Табулювання функцій</h1>
+    <table id="table1">
+      <caption> <img src="Screenshot_1.jpg" alt=""> </caption>
+      <tr>
+        <th>x</th>
+        <th>y</th>
+        <th>b</th>
+      </tr>
+      <script>
+        var z = 1.32;
+        for (var x = -1; x<=1;x=x+0.2) {
+            for (var y = -2; y<=2;y=y+0.2) {
+                console.log(b = Math.pow((Math.cos(Math.atan((Math.pow(x,3)+y)/(1+Math.pow(Math.abs(z),0.5))))),2)+Math.exp(-(3*z-y)/(x)));
+                document.write("<tr><td>" + x + "</td><td>"+ y + "</td><td>" + b+ "</td></tr>");
+            }
+        }
+      </script>
+    </table>
+    <table id="table2">
+        <caption> <img src="Screenshot_2.jpg" alt=""> </caption>
+      <tr>
+        <th>x</th>
+        <th>y</th>
+        <th>a</th>
+      </tr>
+      <script>
+        var z = 1.32;
+       for (var x = -1; x<=1;x=x+0.2) {
+            for (var y = -2; y<=2;y=y+0.2) {
+                console.log(b = Math.pow((Math.cos(Math.atan((Math.pow(x,3)+y)/(1+Math.pow(Math.abs(z),0.5))))),2)+Math.exp(-(3*z-y)/(x)));
+                console.log(a = (1+Math.sqrt(Math.sin(Math.pow(Math.pow((x+y),0.3),2))))/(0.3+Math.pow(b,2)+Math.sin(Math.pow(Math.abs(Math.pow(z,1.3)),2)))+ Math.tan(3*x/y));
+                document.write("<tr><td>" + x + "</td><td>"+ y + "</td><td>" + a + "</td></tr>");
+            }
+        }
+      </script>
+    </table>
+  </body>
+</html>

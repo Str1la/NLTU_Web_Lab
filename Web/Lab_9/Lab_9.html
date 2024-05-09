@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Lab_9 </title> 
+        <script src="script.js"></script>
+        </head>
+    <body>
+        <table>
+            <h1>Надайте інформацію про себе</h1>
+            <tr>
+                <td><label for="name"> Введіть ім'я*:</label></td>
+                <td><input type="text" required class = "text1"></td>
+            </tr>
+            <tr>
+                <td><label for="email"> Введіть E-mail*:</label></td>
+                <td><input type="text" required class = "text2"></td>
+            </tr>
+            <tr>
+                <td><label for="city"> Введіть Місто*:</label></td>    
+                <td><select class = "text3">
+                    <option>Львів</option>
+                    <option>Рівне</option>
+                    <option>Київ</option>
+                    <option>Луцьк</option>
+                    <option>Тернопіль</option>
+                </select></td>
+            </tr>
+        </table>     
+        <p>
+        <h2>Робочі дні</h2>
+        <small style="color: #ff0000">Відмітьте дні і виберіть робочі години<br>
+            (сума робочих годин повинна бути не більшою 40 год/тиждень)</small><br>
+
+        <table>
+            <tr>
+                <td><input type="checkbox">
+                <label for="day"> Понеділок</label></td>
+                <td><label>З</label>
+                <input type="time"></td>
+                <td><label>По</label>
+                <input type="time"></td>
+            </tr>
+
+            <tr> 
+                <td><input type="checkbox">
+                <label for="day"> Вівторок</label></td>
+                <td><label>З</label>
+                <input type="time"></td>
+                <td><label>По</label>
+                <input type="time"></td>
+            </tr> 
+
+            <tr> 
+                <td><input type="checkbox">
+                <label for="day"> Середа</label></td>
+                <td><label>З</label>
+                <input type="time"></td>
+                <td><label>По</label>
+                <input type="time"></td>
+            </tr> 
+
+            <tr>   
+                <td><input type="checkbox">
+                <label for="day"> Четвер</label></td>
+                <td><label>З</label>
+                <input type="time"></td>
+                <td><label>По</label>
+                <input type="time"></td>
+            </tr> 
+
+            <tr> 
+                <td><input type="checkbox">
+                <label for="day">П'ятниця</label></td>
+                <td><label>З</label>
+                <input type="time"></td>
+                <td><label>По</label>
+                <input type="time"></td>
+            </tr> 
+
+            <tr>     
+                <td><input type="checkbox">
+                <label for="day">Субота</label></td>
+                <td><label>З</label>
+                <input type="time"></td>
+                <td><label>По</label>
+                <input type="time"></td>
+            </tr>   
+        </table>
+        <input type="submit" onclick= "getFormData()">
+    </body>
+    
+</html>   
